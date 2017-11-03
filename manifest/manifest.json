@@ -1,5 +1,13 @@
 {
- "name": "Bagus18",
+ "name": "Bagus Ahmad",
+ "description": "Hi, Aku Bagus.!",
+ "dir": "ltr",
+ "lang": "id-ID",
+ "short_name": "Bagus18",
+ "start_url": "/",
+ "display": "standalone",
+ "background_color": "#607d8b",
+ "theme_color": "#607d8b",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
