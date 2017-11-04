@@ -6,8 +6,8 @@
  "short_name": "Bagus18",
  "start_url": "/",
  "display": "standalone",
- "background_color": "#607d8b",
- "theme_color": "#607d8b",
+ "background_color": "#2196f3",
+ "theme_color": "#2196f3",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
