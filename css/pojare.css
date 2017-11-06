@@ -16,8 +16,8 @@ blockquote, blockquote p {
 }
 /** Syntax highlighting styles */
 code {font-size:1em}
-.highlight {font-family:'Fira Mono', monospace;font-size:16px;line-height:1.4;width:auto;background-color:#fff;padding:3px 5px;border-left:3px solid #e3e3e3;word-wrap:break-word;border:1px solid #e3e3e3 }
-.highlighter-rouge .highlight { font-family:'Fira Mono', monospace;border:1px solid #f7f7f7 }
+.highlight {font-family:'Fira Mono', monospace;font-size:16px;line-height:1.4;width:auto;background-color:#fdf6e3;padding:3px 5px;border-left:4px solid #eee8d5;word-wrap:break-word}
+.highlighter-rouge .highlight { font-family:'Fira Mono', monospace; }
 .highlight .c { color: #998; font-style: italic; }
 .highlight .err { color: #a61717; background-color: #e3d2d2; }
 .highlight .k { font-weight: bold; }
