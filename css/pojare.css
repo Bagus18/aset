@@ -15,9 +15,9 @@ blockquote, blockquote p {
 	background-repeat: no-repeat;
 }
 /** Syntax highlighting styles */
-code {line-height:1.4;width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word;font-family:Consolas,"courier new";font-size:16px}
-.highlight {font-family:monospace,monospace;font-size:1em;background: #f1f1f1; }
-.highlighter-rouge .highlight { background: #f1f1f1; }
+code {monospace,monospace;font-size:1em}
+.highlight {font-family:Consolas,"courier new";font-size:16px;line-height:1.4;width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.highlighter-rouge .highlight { margin:20px 0 }
 .highlight .c { color: #998; font-style: italic; }
 .highlight .err { color: #a61717; background-color: #e3d2d2; }
 .highlight .k { font-weight: bold; }
