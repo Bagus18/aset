@@ -1,6 +1,7 @@
 $(function() {
-var emoticon =  [
+var emoticon =  [ // jupuk teko charbase.com/block/emoticons
 			{simbol:':8', image:'\ud83d\ude0e'}, 
+			{simbol:':haha', image:'\ud83d\ude02'}, 
 			{simbol:':love', image:'\u2764\uFE0F'}, 
 			{simbol:':hati', image:'\uD83D\uDC94'}, 
 			{simbol:':hehe', image:'\uD83D\uDE03'}, 
