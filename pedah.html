@@ -1,0 +1,97 @@
+<html lang=id>
+<title>BFi2013</title>
+<head>
+<meta name="robots" content="noindex,nofollow" />
+<style>caption,.raenek{display:none}.rego,.kanan{align:right;text-align:right}#sum{text-align:right;font-style:bold;color:tomato;}
+table{width:100%;border:1px solid gray;padding: 1px;border-spacing: 0px;}
+th{text-align:left;border:1px solid lightgray;border-collapse: collapse;}
+td{text-align:left;border:1px solid lightgray;border-collapse: collapse;}
+</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script>$(document).ready(function(){
+	var sum = 0;
+	$('.rego').each(function() {
+        var value = parseFloat($(this).text().replace(/[^0-9]/g,''));
+		if(!isNaN(value) && value.length != 0) {
+			sum += parseFloat(value);
+		}
+    });
+	$('#sum').text(formatDuit(sum));
+})
+
+function formatDuit(number, places) {
+	number = number || 0;
+	places = !isNaN(places = Math.abs(places)) ? places : 2;
+	var negative = number < 0 ? "-" : "",
+	    i = parseInt(number = Math.abs(+number || 0).toFixed(places), 10) + "",
+	    j = (j = i.length) > 3 ? j % 3 : 0;
+	return ''+ negative + (j ? i.substr(0, j)+'.':"")+i.substr(j).replace(/(\d{3})(?=\d)/g,"$1"+'.');
+}
+</script>
+<body>
+<table>
+<caption>Beat Fi 2013 Putih Biru</caption>
+	<thead>
+		<tr>
+			<th>Tanggal</th>
+			<th>Gawe</th>
+			<th class="kanan">Rego</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>31/03/2017</td>
+			<td>Umbas</td>
+			<td class ="rego">7.800.000</td>
+		</tr>
+		<tr>
+			<td>02/04/2017</td>
+			<td>Ganti Seal CVT+Oli Gardan</td>
+			<td class ="rego">50.000</td>
+		</tr>
+		<tr>
+			<td>05/05/2017</td>
+			<td>Ganti Bholam STD</td>
+			<td class ="rego">20.000</td>
+		</tr>
+		<tr>
+			<td>06/06/2017</td>
+			<td>Ganti Oli Mesin AHM 2x</td>
+			<td class ="rego">138.000</td>
+		</tr>
+		<tr>
+			<td>07/07/2017</td>
+			<td>Ganti Lampu LED B/W</td>
+			<td class ="rego">75.000</td>
+		</tr>
+		<tr>
+			<td>06/08/2017</td>
+			<td>Oversize Block Piston+New Oil</td>
+			<td class ="rego">428.000</td>
+		</tr>
+		<tr>
+			<td>06/08/2017</td>
+			<td>Ganti As Shock Depan R</td>
+			<td class ="rego">215.000</td>
+		</tr>
+		<tr>
+			<td>06/08/2017</td>
+			<td>Ganti Ban Tubles Belakang</td>
+			<td class ="rego">242.500</td>
+		</tr>
+		<tr>
+			<td>08/08/2017</td>
+			<td>Ganti Busi Denso CPR9</td>
+			<td class ="rego">25.000</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td><b>Grand Total</td>
+			<td>Pembelian & Ragat pedah Rp.</td>
+			<td id="sum"></td>
+		<tr>
+	</tfoot>
+</table>
+<body>
+</html>
